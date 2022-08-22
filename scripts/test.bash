@@ -20,6 +20,6 @@ else
         -it \
         --gpus all \
         --ipc host \
-        imagename \
+        simple_lightning_example:latest \
         /bin/bash -c "${desired_command}"
 fi

@@ -15,6 +15,6 @@ else
         -it \
         --gpus all \
         --ipc host \
-        imagename \
+        simple_lightning_example:latest \
         /bin/bash
 fi

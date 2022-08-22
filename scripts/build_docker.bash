@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker build -t imagename:latest -f dockerfiles/Dockerfile .
+docker build -t simple_lightning_example:latest -f dockerfiles/Dockerfile .

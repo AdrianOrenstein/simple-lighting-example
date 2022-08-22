@@ -16,6 +16,6 @@ else
         --gpus all \
         --ipc host \
         -p 8888:8888 \
-        imagename \
+        simple_lightning_example:latest \
         jupyter-lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 fi

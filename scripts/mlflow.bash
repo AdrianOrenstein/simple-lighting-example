@@ -16,6 +16,6 @@ else
         -p 5000:5000 \
         --gpus all \
         --ipc host \
-        imagename \
+        simple_lightning_example:latest \
         /bin/bash -c "mlflow server --host 0.0.0.0 --port 5000"
 fi
