@@ -1,26 +1,17 @@
-# Docker project template
-**The default docker container assumes you have a CUDA enabled device - this affects both the base docker image I start from (pytorch:1.11.0-cuda11.3-cudnn8-devel) and that I pass all GPUs in the launch scripts via `--gpus all`.**
+# Simple Lightning example
+An example of writing pytorch code.
 
-`make run` launches imagename
+# TODO
 
-`make build` builds Dockerfile as an image called "imagename"
+## ResNet model defintion
+- [x] Write my preferred way of defining models (in the way we assume we don't need to facilitate model surgery..)
+- [ ] Figure out the way you name layers added to a ModuleList object.
 
-`make jupyter` launches jupyter-lab 
+## Training an Image Classifier
+- [ ] Provide Vanilla training loop
+- [ ] Provide pytorch lightning training loop
 
-## How to setup
-1. Use this repo as a template
-
-1. `git grep imagename`, change imagename to a new name, or ideally, your image name hosted on dockerhub
-
-1. change the setup.py file project name so something of your own
-
-
-# FAQs
-
-## How do I install NVIDIA-CUDA drivers for my host machine?
-Go [here](https://www.nvidia.com/download/index.aspx).
-
-## How can I store my container so others don't need to build it again?
-Go to [dockerhub](https://hub.docker.com/). This is useful so that others do not need to rebuild the container again with different versions.
-
-
+## Training an Auto-Encoder
+- [ ] Find a more standard architecture as an example..
+- [ ] Provide Vanilla training loop
+- [ ] Provide pytorch lightning training loop
